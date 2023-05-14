@@ -9,8 +9,16 @@
   /* outline: 1px solid gray; */
 }
 
+html {
+  /* scroll-behavior: smooth; */
+}
 :root {
   font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style-type: none;
 }
 
 .size {
@@ -18,10 +26,13 @@
   /* position: relative; */
 }
 
+.margin-bottom {
+  margin-bottom: 1.5rem;
+}
+
 body {
   font-size: 1.6rem;
   font-family: "roboto", sans-serif;
-  scroll-behavior: smooth;
   color: #555;
 }
 
@@ -74,7 +85,7 @@ header a:visited {
 .side-nav-btn {
   /* cross */
   visibility: hidden;
-  position: absolute;
+  position: fixed;
   /* z-index: -1; */
   right: 23px;
   border: none;
@@ -103,16 +114,17 @@ header a:visited {
   align-content: center;
   gap: 3rem;
   border: 1px solid black;
-  position: absolute;
+  position: fixed;
   top: 0px;
   left: 0px;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(245, 245, 220, 0.529);
+  background-color: rgba(255, 255, 255, 0.637);
   backdrop-filter: blur(10px);
   transform: translateX(0%);
   transition: all 0.5s ease-in;
   display: none;
+  z-index: 2;
 }
 
 .menu-icon-btn:active ~ .mobile-nav,
@@ -141,7 +153,7 @@ header a:visited {
 .mob-nav-btn a {
   display: inline-block;
   padding: 1rem 2rem;
-  color: #fff;
+  color: #fff !important;
 }
 
 .mob-nav-btn a:hover {
@@ -165,6 +177,7 @@ header a:visited {
 .hero-section {
   padding: 2rem;
   background-color: #fdf2e9;
+  margin-bottom: 3rem;
 }
 .text1 {
   padding: 1rem;
@@ -237,12 +250,402 @@ header a:visited {
 .small {
   font-size: 1.4rem;
   font-weight: bold;
+  text-align: center;
 }
 
 .img-hero-container {
   text-align: center;
+  margin-bottom: 3rem;
 }
 .img-hero-container img {
-  max-width: 250px;
+  max-width: 400px;
+
   width: 100%;
+}
+
+.feature-section h2 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  /* letter-spacing: 2px; */
+  text-transform: uppercase;
+  color: #888;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.feature-section figure {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 8rem;
+}
+.feature-section img {
+  height: 1rem;
+  /* width: 50px; */
+
+  filter: brightness(0);
+  opacity: 50%;
+}
+
+.feature-section img:nth-of-type(1) {
+  width: 30px;
+}
+
+.feature-section img:nth-of-type(2) {
+  width: 37px;
+}
+.feature-section img:nth-of-type(3) {
+  width: 68px;
+}
+
+.feature-section img:nth-of-type(4) {
+  width: 74px;
+}
+
+.feature-section img:nth-of-type(4) {
+  width: 51px;
+}
+
+.space {
+  padding: 0rem 2.5rem;
+}
+
+.steps {
+  margin-bottom: 5rem;
+}
+
+.healthy-steps-container {
+  margin-bottom: 8rem;
+}
+
+.steps-heading p {
+  color: #cf711f;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+}
+
+.steps-heading h2 {
+  color: #333;
+  font-size: 2.8rem;
+  line-height: 1.2;
+  margin-bottom: 5rem;
+}
+
+.step-number {
+  color: #ddd;
+  font-weight: bold;
+  font-size: 7rem;
+  margin-bottom: 1rem;
+}
+
+.steps figure {
+  margin-bottom: 2rem;
+  text-align: center;
+  position: relative;
+  /* background-color: #333; */
+}
+
+.steps figure::after {
+  content: "";
+  display: block;
+  /* height: 60%; */
+  padding-bottom: 55%;
+  width: 60%;
+  background-color: #fdf2e9;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -2;
+}
+
+.steps figure::before {
+  content: "";
+  display: block;
+  /* height: 60%; */
+  width: 45%;
+  padding-bottom: 45%;
+
+  background-color: #fae5d3;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.steps > div h3 {
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.steps > div p:nth-of-type(2) {
+  line-height: 1.6;
+  font-size: 1.4rem;
+  word-spacing: 1px;
+}
+
+.steps img {
+  /* max-width: 120px; */
+  width: 35%;
+}
+
+.recipe-section {
+  /* outline: 1px solid gray; */
+  margin-bottom: 8rem;
+}
+.recipe-heading p {
+  color: #cf711f;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+}
+
+.recipe-heading h2 {
+  color: #333;
+  text-align: center;
+  font-size: 2.8rem;
+  line-height: 1.2;
+  margin-bottom: 3rem;
+}
+
+.card-item {
+  border-radius: 1.5rem;
+  margin-bottom: 4rem;
+  box-shadow: 1px 1px 10px gainsboro;
+  transition: all 0.4s;
+}
+
+.card-item:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+
+.card-item figure {
+  border-radius: inherit;
+}
+.card-item img {
+  width: 100%;
+  border-radius: inherit;
+}
+
+.recipe-text {
+  padding: 2rem;
+}
+.card-item:first-child p {
+  background-color: #51cf66;
+}
+
+.tag {
+  display: inline-block;
+  color: #333;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0.2rem 0.5rem;
+  border-radius: 111111px;
+  margin-bottom: 1.5rem;
+}
+
+.card-item h3 {
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.card-item li {
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+  font-size: 1.4rem;
+}
+
+.card-item:nth-child(2) p:first-child {
+  background-color: #94d82d;
+}
+
+.card-item:nth-child(2) p:nth-child(2) {
+  background-color: #ffd43b;
+}
+
+.recipe-diet h3 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.recipe-diet li {
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+  max-width: max-content;
+  margin-left: 10rem;
+}
+
+.recipe-link {
+  color: #e67e22;
+  margin-left: 10rem;
+  border-bottom: 1px solid #e67e22;
+}
+
+.recipe-link:hover {
+  border-bottom: 1px solid transparent;
+}
+
+.testimonial-heading p {
+  color: #cf711f;
+
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+.testimonial-section {
+  padding: 8rem 0rem 1rem 0rem;
+  background-color: #fdf2e9;
+  margin-bottom: 8rem;
+}
+
+.testimonial-text {
+  margin: 0rem 2rem;
+}
+.testimonial-heading h2 {
+  color: #333;
+  font-size: 2.8rem;
+  line-height: 1.2;
+  margin-bottom: 3rem;
+}
+
+.testimonial-item {
+  margin-bottom: 4rem;
+}
+
+.testimonial-item figure {
+  margin-bottom: 1rem;
+}
+
+.testimonial-item img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.testimonial-item p:nth-of-type(1) {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.testimonial-item p:nth-of-type(2) {
+  font-size: 1.2rem;
+  color: #888;
+}
+
+.images img {
+  width: 100%;
+}
+
+.images {
+  margin: 7rem 1rem 2rem 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.small-heading {
+  color: #cf711f;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.price-heading h2 {
+  color: #333;
+  font-size: 2.8rem;
+  margin-bottom: 3rem;
+}
+
+.pricing-card {
+  display: grid;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.card-one {
+  border: 2px solid #fdf2e9;
+  margin-bottom: 3rem;
+}
+.card-two {
+  background-color: #fdf2e9;
+  margin-bottom: 2rem;
+}
+
+.pricing-card h3 {
+  text-align: center;
+  color: #cf711f;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+.pricing-card p:first-of-type {
+  text-align: center;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.pricing-card p:first-of-type > :first-child {
+  font-size: 2rem;
+  /* font-weight: 600; */
+  font-weight: normal;
+}
+
+.pricing-card p:first-of-type > :last-child {
+  font-size: 4rem;
+}
+.pricing-card p:last-of-type {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #888;
+  margin-bottom: 3rem;
+}
+
+.pricing-card ul {
+  margin-left: 3rem;
+  margin-bottom: 3rem;
+}
+
+.pricing-card ul li {
+  line-height: 2;
+  list-style-type: disc;
+  list-style-position: inside;
+  color: #333;
+}
+
+.pricing-card a {
+  justify-self: center;
+  font-weight: 600;
+  color: #fdf2e9;
+  background-color: #e67e22;
+  padding: 1.5rem 1rem;
+  font-size: 1.8rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+.price-text {
+  font-size: 1.2rem;
+  text-align: center;
+  word-spacing: 1px;
+  line-height: 1.6;
 }
