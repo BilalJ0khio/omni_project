@@ -571,12 +571,12 @@ header a:visited {
 .price-heading h2 {
   color: #333;
   font-size: 2.8rem;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 }
 
 .pricing-card {
   display: grid;
-  padding: 2rem;
+  padding: 4rem;
   border-radius: 1rem;
 }
 
@@ -586,7 +586,25 @@ header a:visited {
 }
 .card-two {
   background-color: #fdf2e9;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-two::after {
+  content: "best value";
+  display: inline-block;
+  text-transform: uppercase;
+  position: absolute;
+  top: 30px;
+  right: -66px;
+  background-color: #ffd43b;
+  padding: 0.4rem 8rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  transform: rotate(45deg);
+  /* border-top-right-radius: 1rem; */
 }
 
 .pricing-card h3 {
@@ -641,6 +659,10 @@ header a:visited {
   font-size: 1.8rem;
   border-radius: 1rem;
   margin-bottom: 2rem;
+}
+
+.pricing-card a:hover {
+  background-color: #cf711f;
 }
 
 .price-text {
