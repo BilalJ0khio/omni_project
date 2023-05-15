@@ -695,9 +695,12 @@ header a:visited {
   word-spacing: 1px;
 }
 
+.form {
+  margin-bottom: 8rem;
+}
 .main-form {
   display: grid;
-  grid-template-rows: 2fr 1fr;
+  grid-template-rows: 1fr 2fr;
   background-color: #e67d22e2;
   color: #333;
 }
@@ -756,6 +759,7 @@ header a:visited {
   background-blend-mode: soft-light;
   background-size: cover;
   background-position: center;
+  grid-row: 1/2;
 }
 .form-heading h2 {
   font-size: 2.8rem;
@@ -766,4 +770,26 @@ header a:visited {
   font-size: 1.4rem;
   line-height: 1.7;
   margin-bottom: 3rem;
+  color: black;
+}
+
+footer {
+  border-top: 1px solid #ddd;
+}
+
+.link-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 4rem 2rem;
+  gap: 1rem;
+}
+.footer-links p {
+  margin-bottom: 2rem;
+}
+
+.links a {
+  color: #888;
+  font-size: 1.2rem;
+  display: inline-block;
+  margin-bottom: 1rem;
 }
