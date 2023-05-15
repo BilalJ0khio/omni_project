@@ -755,7 +755,7 @@ header a:visited {
 
 .image-container {
   background-color: #cf711f63;
-  background-image: url(./img/eating.jpg);
+  background-image: url(img/eating.jpg);
   background-blend-mode: soft-light;
   background-size: cover;
   background-position: center;
