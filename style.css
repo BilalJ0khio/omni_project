@@ -47,6 +47,10 @@ a {
   display: inline-block;
 }
 
+.food-link {
+  display: none;
+}
+
 header a:visited {
   color: #343a40;
 }
@@ -963,5 +967,142 @@ footer {
   }
   .links a {
     margin-bottom: auto;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .recipe-heading h2 {
+    margin-bottom: 5rem;
+  }
+
+  .recipe-card {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .recipe-diet {
+    grid-column: auto;
+  }
+
+  .recipe-link {
+    display: none;
+  }
+
+  .food-link {
+    grid-column: 1/-1;
+    display: block;
+    justify-self: center;
+    color: #cf711f;
+    border-bottom: 1px solid #cf711f;
+    transition: all 100ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  }
+
+  .food-link:hover {
+    border-bottom: none;
+  }
+
+  .price-grid {
+    max-width: 650px;
+    margin: 0px auto;
+  }
+  .pros-section {
+    /* grid-template-columns: repeat(4, 1fr); */
+
+    row-gap: 3rem;
+    column-gap: 4rem;
+  }
+
+  .pros-item {
+    margin-bottom: 0rem;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .hero-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .img-hero-container img {
+    max-width: 400px;
+  }
+
+  .main-heading {
+    padding: 4rem 1rem 0rem;
+    text-align: left;
+    font-size: 4rem;
+  }
+  .text1 {
+    text-align: left;
+    padding: 0rem 1rem;
+  }
+
+  .pros-section {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .form-heading h2 {
+    font-size: 3.4rem;
+  }
+
+  form-heading p {
+    font-size: 1.6rem;
+  }
+
+  .form-input {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .main-form button {
+    align-self: center;
+    margin-bottom: 0.2rem;
+  }
+
+  .main-form {
+    max-width: 1000px;
+    margin: 0px auto;
+    border-radius: 1rem;
+    overflow: hidden;
+  }
+
+  .form-input-section {
+    padding: 3rem;
+  }
+  .recipe-section > div {
+    max-width: 1100px;
+    margin: 0px auto;
+  }
+  .menu-icon-btn,
+  .side-nav-btn {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: flex;
+    position: relative;
+    width: auto;
+    height: auto;
+    background-color: inherit;
+    border: none;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .mobile-nav > :nth-child(n) {
+    font-size: 1.6rem;
+  }
+
+  .hero-btn-container {
+    justify-content: start;
+    padding: 1rem;
+  }
+  .hero-img-container {
+    justify-content: flex-start;
+    padding: 1rem;
+    align-items: center;
+  }
+
+  .cus-imgs {
+    margin-bottom: 0rem;
   }
 }
