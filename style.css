@@ -22,7 +22,7 @@ ul {
 }
 
 .size {
-  max-width: 1200px;
+  max-width: 1500px;
   /* position: relative; */
 }
 
@@ -172,7 +172,7 @@ header a:visited {
   margin-bottom: 3rem;
   line-height: 1.1;
   letter-spacing: -1px;
-  color: #343a40;
+  color: #333;
 }
 .hero-section {
   padding: 2rem;
@@ -792,4 +792,176 @@ footer {
   font-size: 1.2rem;
   display: inline-block;
   margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 550px) {
+  .main-heading {
+    padding: 2rem 4rem 0rem 4rem;
+    font-weight: bolder;
+  }
+
+  .text1 {
+    padding: 0rem 4rem;
+  }
+
+  .btn1 {
+    padding: 1rem 2rem;
+  }
+  .btn2 {
+    padding: 1rem 1.5rem;
+  }
+
+  .img-hero-container img {
+    max-width: 300px;
+  }
+
+  .feature-section img:nth-of-type(1) {
+    width: 50px;
+    height: auto;
+  }
+
+  .feature-section img:nth-of-type(2) {
+    width: 50px;
+    height: 1.5rem;
+  }
+
+  .feature-section img:nth-of-type(3) {
+    width: 80px;
+    height: 1.3rem;
+  }
+
+  .feature-section img:nth-of-type(4) {
+    width: 70px;
+    height: 1.2rem;
+  }
+
+  .feature-section img:nth-of-type(5) {
+    width: 70px;
+    height: 1.2rem;
+  }
+
+  .steps-heading p {
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    word-spacing: 0.5px;
+  }
+  .steps {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .steps figure {
+    align-self: center;
+    margin-bottom: 0px;
+  }
+
+  .steps-grid {
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
+
+  .recipe-heading p {
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  .recipe-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  .recipe-diet {
+    grid-column: 1/-1;
+  }
+
+  .recipe-diet li {
+    margin-left: 0px;
+  }
+  .recipe-diet ul {
+    display: grid;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .recipe-link {
+    margin-left: 0rem;
+    display: block;
+    border-bottom: none;
+    text-align: center;
+  }
+
+  .testimonial-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .images {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .small-heading {
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
+
+  .price-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .pricing-card {
+    padding: 3rem 0rem 0rem 0rem;
+  }
+
+  .pricing-card ul {
+    margin-left: 0px;
+    display: grid;
+    justify-content: center;
+  }
+
+  .pricing-card ul li {
+    /* list-style-type: none; */
+    list-style-position: outside;
+  }
+
+  .hidden {
+    visibility: hidden;
+  }
+
+  .card-two::after {
+    top: 21px;
+    right: -77px;
+  }
+  .pricing-card a {
+    font-size: 1.6rem;
+  }
+  .pros-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 3rem 2rem 2rem 2rem;
+  }
+  .main-form {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  .image-container {
+    grid-row: auto;
+  }
+
+  .link-container {
+    padding: 4rem 0rem;
+    justify-items: center;
+  }
+
+  .links {
+    display: grid;
+    gap: 2rem;
+  }
+  .links a {
+    margin-bottom: auto;
+  }
 }
