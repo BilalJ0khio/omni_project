@@ -1196,3 +1196,18 @@ footer {
     margin-bottom: 12rem;
   }
 }
+
+@media screen and (min-width: 1350px) {
+  .images {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .main-form {
+    max-width: 1200px;
+  }
+
+  .form-input {
+    row-gap: 1rem;
+    column-gap: 3rem;
+  }
+}
