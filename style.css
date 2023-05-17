@@ -1197,7 +1197,11 @@ footer {
   }
 }
 
-@media screen and (min-width: 1350px) {
+@media screen and (min-width: 1300px) {
+  body {
+    font-size: 1.6rem;
+  }
+
   .images {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -1209,5 +1213,61 @@ footer {
   .form-input {
     row-gap: 1rem;
     column-gap: 3rem;
+  }
+
+  .steps-heading h2 {
+    margin-bottom: 8rem;
+    font-size: 3.8rem !important;
+  }
+  .steps > div h3 {
+    font-size: 2.8rem;
+  }
+
+  .steps > div p:nth-of-type(2) {
+    font-size: 1.6rem;
+  }
+  .recipe-heading h2 {
+    font-size: 3.8rem;
+  }
+  .recipe-diet h3 {
+    font-size: 2.8rem;
+  }
+  .recipe-diet li {
+    font-size: 1.6rem;
+  }
+
+  .testimonial-heading h2 {
+    font-size: 3.8rem;
+  }
+
+  .testimonial-item img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .price-heading h2 {
+    font-size: 3.8rem;
+  }
+
+  .price-heading {
+    margin-left: 8rem;
+  }
+
+  .form-input-section {
+    padding: 4rem;
+  }
+
+  .form-heading h2 {
+    font-size: 3.8rem;
+    text-align: center;
+  }
+  .form-heading p {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  .feature-section h2 {
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
   }
 }
