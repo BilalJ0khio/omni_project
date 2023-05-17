@@ -9,12 +9,14 @@
   /* outline: 1px solid gray; */
 }
 
-html {
-  /* scroll-behavior: smooth; */
-}
 :root {
   font-size: 62.5%;
   scroll-behavior: smooth;
+}
+
+.hero-article {
+  background-color: #fdf2e9;
+  margin-bottom: 5rem;
 }
 
 ul {
@@ -554,8 +556,25 @@ header a:visited {
   color: #888;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.testimonial-heading p {
+  font-weight: bold;
+}
+
+.testimonial-item {
+  margin-bottom: 1rem;
+}
+
 .images img {
   width: 100%;
+  transition: all 0.4s;
+}
+
+.images img:hover {
+  transform: scale(1.1);
 }
 
 .images {
@@ -1016,19 +1035,31 @@ footer {
 }
 
 @media screen and (min-width: 950px) {
+  :root {
+    font-size: 70%;
+  }
+
   .hero-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 
   .img-hero-container img {
-    max-width: 400px;
+    /* max-width: 400px; */
+    justify-self: start;
+    max-width: 500px;
+  }
+
+  .hero-section {
+    max-width: 1200px;
+    margin: 0px auto;
   }
 
   .main-heading {
     padding: 4rem 1rem 0rem;
     text-align: left;
     font-size: 4rem;
+    font-family: "Rubik Dirt", cursive;
   }
   .text1 {
     text-align: left;
@@ -1104,5 +1135,64 @@ footer {
 
   .cus-imgs {
     margin-bottom: 0rem;
+  }
+
+  .steps-size {
+    max-width: 1200px;
+    margin: 0px auto;
+  }
+
+  .feature-section figure {
+    align-items: center;
+    gap: 5rem;
+  }
+
+  .feature-section img:nth-of-type(1) {
+    width: 10rem;
+    height: 3.1rem;
+  }
+
+  .feature-section img:nth-of-type(2) {
+    width: 10rem;
+    height: 3.1rem;
+  }
+
+  .feature-section img:nth-of-type(3) {
+    width: 13rem;
+    height: 3.1rem;
+  }
+
+  .feature-section img:nth-of-type(4) {
+    width: 13rem;
+    height: 2.2rem;
+  }
+
+  .feature-section img:nth-of-type(5) {
+    width: 13rem;
+    height: 2.2rem;
+  }
+  .steps > div h3 {
+    font-size: 2.2rem;
+  }
+
+  .testimonial-section {
+    padding: 2rem 0rem 1rem 0rem;
+  }
+
+  .testimonial-section > div {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+  }
+  .testimonial-text {
+    align-self: center;
+  }
+
+  .images {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0px;
+    padding: 1rem;
+  }
+  .healthy-steps-container {
+    margin-bottom: 12rem;
   }
 }
